@@ -44,11 +44,15 @@ For obtaining the optimized value of the parameters,theta.
 Learning rate : The step size used in updating the parameters during each iteration of gradient descent.
 
 Cost history : list to store the cost at each iteration for later analysis or plotting.
+![Gradient descent](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/338db0a4-acf7-40cc-ac49-f71b2b305126)
+
 
 ### <a name="_2k4lcoofwsuq"></a>R-2 Score
 Ss\_total : computes the total sum of the squares, which represents the total variance. It calculates the squared differences between each true value and the mean of the true values.
 
 Ss\_residual : Computes the residual sum of squares, which represents the unwxplained variance between the true target value and predicted values.
+![R-2 Score formula](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/6eda4417-27d9-4188-b557-58cdf5dddbba)
+
 
 ### <a name="_y8zvka6vdf6k"></a>Adding the bias term
 The bias term is commonly added to the features in linear regression to account for a constant offset or intercept in the model. This is often represented as an additional feature with a constant value of 1.

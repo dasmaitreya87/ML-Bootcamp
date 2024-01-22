@@ -61,6 +61,7 @@ Np.random.randn : This generates random values from a standard normal distributi
 
 The random weights are updated during the training process using the gradient descent algorithm.
 ### <a name="_vma5bvnb9ej"></a>Graph of cost vs iterations
+![costvsiterations](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/9147c8d8-e172-4528-b9d6-e927abbe5956)
 
 R-squared score: 0.9999999978525291
 # <a name="_hiv1z3f0imdx"></a>Polynomial Regression
@@ -110,6 +111,7 @@ R2 Score: 0.8052817171547013
 # <a name="_q07sxr7wwhzo"></a>Logistic Regression
 Project Link : [Project_Logistic_Regression](https://colab.research.google.com/drive/17JcAsAaCWyLb601qMfj69IO92CDO0Ihv?usp=sharing)
 ### <a name="_t5lnqa6c3hj9"></a>One-hot encoding technique
+![One hot encoding](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/03206610-8ea1-4e38-a8d2-121bbd9c46aa)
 
 It is a common technique used in machine learning to represent categorical labels in a binary matrix format.
 
@@ -117,6 +119,7 @@ Each row corresponds to a sample, and each column corresponds to a class.
 
 Encoded\_labels : initializes a matrix with zeros. Each row of this matrix will represent a sample, and each column will represent a class.
 ### <a name="_qjtr9nqx9lg"></a>Sigmoid Function
+![Sigmoid function](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/908f886f-7c1d-4786-8379-08de1f63ac8b)
 
 A sigmoid function is employed to squash the output of a linear transformation into a range between 0 and 1.
 
@@ -137,6 +140,7 @@ A=sigmoid(Z)
 Cross entropy loss between predicted probabilities A and true labels Y. This loss is generally calculated in cases of binary classification. The same loss will be calculated in case of n-layer neural networks later on.
 
 The formula for the same is: 
+<img width="368" alt="cost function" src="https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/c7963660-3193-42f9-a47d-cd51d1b48316">
 
 Numerical Stability
 
@@ -176,6 +180,7 @@ The mathematical formula for standard scaling is
 This ensures that each feature has a mean of 0 and a standard deviation of 1. Both the training and testing data are scaled to ensure consistency.
 ### <a name="_lndon2vd80h"></a>Euclidean Distance
 The mathematical function for calculating euclidean distance is
+![euclidean distance](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/d4b60cf2-f25d-42e8-aa0c-ca8f57de412d)
 
 ### <a name="_r8w8eobfdzgp"></a>K\_nearest\_neighbors function
 The **enumerate** function is a built-in Python function that takes an iterable (in this case, X\_test\_scaled) and returns an iterator that produces tuples containing the index and the corresponding value from the iterable.
@@ -191,8 +196,10 @@ The labels corresponding to the indices are extracted and stored in k\_neighbors
 **Np.argmax** : is a NumPy function that returns the index of the maximum value along a specified axis of the array.
 ### <a name="_3p4wragooo9j"></a>Optional Printing of cost
 After every 100 iterations, the code prints the iteration number and the cost, which is calculated as **1 - accuracy.** The accuracy is the proportion of correct predictions up to the current iteration. Formula of accuracy : 
+<img width="217" alt="Accuracy formula" src="https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/f435874f-66bf-4a04-9ded-c5afe7c092c3">
 
 ### <a name="_sv617hpoah11"></a>Assessing the K-nearest neighbors model
+<img width="242" alt="Precision,Recall,F1" src="https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/ffa70f47-fac1-4390-9a5f-24c7682b9fdd">
 
 Precision :0.9622176948391702
 
@@ -274,6 +281,7 @@ The function iterates over different values of k, runs the kmeans function for e
 ### <a name="_3dum5sp6y7gz"></a>My SSE vs k graph
 
 We can see that the elbow of the graph is located at k = 3.The "elbow" in the plot is often considered the optimal value for k, where adding more clusters does not significantly reduce the SSE.
+![Elbow method Curve](https://github.com/dasmaitreya87/ML-Bootcamp/assets/153699573/a371800d-f1cb-4863-9847-41b877c7cdf1)
 
 ### <a name="_b7om2i9ibqeo"></a>Silhouette score
 The silhouette score measures how well separated the clusters are and how similar an object is to its own cluster.The silhouette score for the entire dataset is the average of the silhouette score for each instance. The score ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
